@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./loginpage.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container loginpage bg-white mx-auto my-5 rounded-3 d-flex" style="height: 560px; width: 70%;">
+        <div class="leftc  h-100 w-50"></div>
+        <div class="rightc h-100 w-50 d-flex align-items-center">
+            <div class="card border-0 h-75 w-100">
+                <div class="card border-0 m-auto w-75">
+                    <form action="" method="post">
+                        <h4 class="fw-bold mb-4 text-center">Account Login</h4>
+                        <div class="form-group  mx-auto w-100 border rounded-3 d-flex w-75 ps-2 align-items-center">
+                            <label for="email" class="form-label m-0"><i class="bi bi-envelope-fill fs-5"></i></label>
+                            <input type="email" class="form-control shadow-none border-0" id="email"
+                                placeholder="email@gmail.com"  oninput="validateemail()" onblur="validateemail()" required>
+                        </div>
+                        <span id="emailout" class="text-danger"></span>
+                        <div class="form-group border mx-auto mt-3 rounded-3 w-100 d-flex ps-2 align-items-center">
+                            <label for="password" class="form-label m-0"><i class="bi bi-lock-fill fs-5"></i></label>
+                            <input type="password" id="password" class="form-control  shadow-none border-0"
+                                placeholder="enter password"  minlength="6" maxlength="10" required>
+                        </div>
+                        <div class="d-flex justify-content-between"><span id="passout" class="text-danger"></span><span class=""><a href="#">Forgot?</a></span></div>
+                        <button class="btn btn-success d-block m-auto mt-3 mb-3 w-100">Login</button>
+                        <a href="./signup.html" class="newUser text-center"><p>New to mart+? Create an account</p></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./loginpage.js"></script>
+</body>
+
+</html>
